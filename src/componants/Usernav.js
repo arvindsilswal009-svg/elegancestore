@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-function Nav() {
+function Usernav() {
   const navigate=useNavigate();
     const handlelog=()=>{
         navigate('/login');
@@ -11,7 +11,7 @@ function Nav() {
     <div className="nav-bar">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-   <label class="navbar-brand" to="#">Elegance Store</label>&emsp;&emsp;&emsp;&emsp;
+   <label class="navbar-brand" to="#">Welcome {}</label>&emsp;&emsp;&emsp;&emsp;
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -40,8 +40,12 @@ function Nav() {
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
-        &emsp;
-        <button className="btn btn-outline-success" type="submit" onClick={handlelog}>SignIn</button>
+        &emsp;&emsp;&emsp;
+        <Link><i class="fa-solid fa-cart-shopping "></i> <br/>Cart</Link>
+         &emsp;&emsp;&emsp;
+        <button className="btn btn-outline-success" type="submit" onClick={handlelog}>SignOut</button>
+
+
       </form>
 
     </div>
@@ -51,4 +55,4 @@ function Nav() {
   )
 
         }
-export default Nav;
+export default Usernav;

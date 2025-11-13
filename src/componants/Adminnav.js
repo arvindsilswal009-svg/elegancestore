@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-function Nav() {
+function Adminnav() {
   const navigate=useNavigate();
     const handlelog=()=>{
         navigate('/login');
@@ -31,7 +31,7 @@ function Nav() {
           <Link class="nav-link active" aria-current="page" to="#">Mouse pads</Link>
         </li>&emsp;&emsp;
         <li class="nav-item">
-          <Link class="nav-link active" aria-current="page" to="#">Custom</Link>
+          <Link class="nav-link active" aria-current="page" to="/addproduct">Add Products</Link>
         </li>&emsp;&emsp;
        <li class="nav-item">
           <Link class="nav-link active" aria-current="page" to="#">About</Link>
@@ -41,7 +41,7 @@ function Nav() {
         <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
         <button className="btn btn-outline-success" type="submit">Search</button>
         &emsp;
-        <button className="btn btn-outline-success" type="submit" onClick={handlelog}>SignIn</button>
+       <button className="btn btn-outline-success" type="submit" onClick={handlelog}>SignOut</button>
       </form>
 
     </div>
@@ -51,4 +51,4 @@ function Nav() {
   )
 
         }
-export default Nav;
+export default Adminnav;

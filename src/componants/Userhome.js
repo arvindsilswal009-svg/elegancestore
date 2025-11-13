@@ -2,7 +2,8 @@ import react, { useState } from "react";
 import { Link } from "react-router-dom";
 import Nav from "./Nav";
 import Cart from "./Cart";
-function Home(){
+import Usernav from "./Usernav";
+function Userhome(){
 
      return (
       <>
@@ -10,7 +11,7 @@ function Home(){
       <div> <p style={{backgroundColor:"gray"}}><marquee direction="right">You Will Get The Product with premium quality and high definition printing .                                                                        You can customize the photos as you want it.</marquee>   </p></div>
      
       <div className="row items-center">
-        <div className="col-md-3 text-center"><img src="url('.\public\storelogo.png')" /></div>
+        <div className="col-md-3 text-center"> <img src="storelogo.png" style={{height:"100px",width:"100px"}}/></div>
         <div className="col-md-6 text-center"><center>  <h3>Welcome To Elegance Store</h3></center></div>
         <div className="col-md-3 text-center">
 <span><Link ><i class="fa-solid fa-phone"></i> +91-1234567890 </Link></span><br/>
@@ -21,9 +22,9 @@ function Home(){
       </div>
       <br/>
       <div> 
-      <Nav/> // Navigation Bar
+      <Usernav/> 
       </div> 
-      <Cart/> /* Cart Componant */
+      <Cart/> 
       <br/>
       <hr/>
         <p>Copyright @2024 Elegance Store. All Rights Reserved</p>
@@ -45,4 +46,4 @@ function Home(){
      )
 }
 
-export default Home;
+export default Userhome;

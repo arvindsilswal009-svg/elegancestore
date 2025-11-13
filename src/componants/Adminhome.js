@@ -1,8 +1,8 @@
 import react, { useState } from "react";
 import { Link } from "react-router-dom";
-import Nav from "./Nav";
 import Cart from "./Cart";
-function Home(){
+import Adminnav from "./Adminnav";
+function Adminhome(){
 
      return (
       <>
@@ -11,17 +11,13 @@ function Home(){
      
       <div className="row items-center">
         <div className="col-md-3 text-center"><img src="url('.\public\storelogo.png')" /></div>
-        <div className="col-md-6 text-center"><center>  <h3>Welcome To Elegance Store</h3></center></div>
+        <div className="col-md-6 text-center"><center>  <h3>Welcome Rohit Silswal</h3></center></div>
         <div className="col-md-3 text-center">
-<span><Link ><i class="fa-solid fa-phone"></i> +91-1234567890 </Link></span><br/>
-<span><Link ><i class="fa-brands fa-whatsapp"></i> +91-1234567890 </Link></span><br/>
-<span><Link ><i class="fa-solid fa-envelope"></i> elegancestore@gmail.com </Link></span>
-
-        </div>
+ </div>
       </div>
       <br/>
       <div> 
-      <Nav/> // Navigation Bar
+      <Adminnav/> // Navigation Bar
       </div> 
       <Cart/> /* Cart Componant */
       <br/>
@@ -45,4 +41,4 @@ function Home(){
      )
 }
 
-export default Home;
+export default Adminhome;

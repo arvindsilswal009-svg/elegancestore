@@ -1,12 +1,69 @@
+body {
+  margin: 0;
+  padding: 0;
+ background-image: url(/public/backpattern.avif);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .container-fluid {
-  background-image: url(/public/backpattern.avif);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: fixed;
   font-style: normal;
   margin-top: 2px;
   color: blanchedalmond;
   text-align: center;
   width: 100%;
 }
+.logincontainer {
+ 
+  
+  margin-top: 2px;
+  color: blanchedalmond;
+  text-align: center;
+  width: 100%;
+}
+.loginform {
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #0c0101;
+  background: #282626;
+  border-radius: 10px;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
+  text-align: left; 
+  margin-top: 40px;
+}
 
+.registerform {
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #0c0101;
+  background: #282626;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
+  text-align: left;
+  margin-top: 40px;
+}
+
+.addproductform {
+  margin: auto;
+  padding: 10px;
+  border: 1px solid #0c0101;
+  background: #282626;
+  border-radius: 10px;
+  width: 400px;
+  height: 600px;
+  box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
+  text-align: left; 
+  margin-top: 40px;
+}
+.loginbtns {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 10px;
+  border: 1px solid #0c0101;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 40%;
+  box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
+}
