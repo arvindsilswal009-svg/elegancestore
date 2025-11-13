@@ -6,7 +6,7 @@ function Home(){
 
      return (
       <>
-      <div className="container">
+      <div className="container-fluid">
       <div> <p style={{backgroundColor:"gray"}}><marquee direction="right">You Will Get The Product with premium quality and high definition printing .                                                                        You can customize the photos as you want it.</marquee>   </p></div>
      <hr/>
       <div className="row items-center">
@@ -24,6 +24,22 @@ function Home(){
       <Nav/>
       </div> 
       <Cart/>
+      <br/>
+      <hr/>
+        <p>Copyright @2024 Elegance Store. All Rights Reserved</p>
+        <hr/>
+        <div>
+        <center> <h4><u><b>Contact us</b></u></h4> </center>
+        <center> 
+            <div className="col-md-3 text-center">
+<span><i class="fa-solid fa-phone fa-2x"></i> &emsp;&emsp; :<Link > +91-1234567890 </Link></span><br/><br/>
+<span><i class="fa-brands fa-whatsapp fa-2x"></i>&emsp;&emsp; :<Link > +91-1234567890 </Link></span><br/><br/>
+<span><i class="fa-solid fa-envelope fa-2x"></i>&emsp;&emsp; :<Link > elegancestore@gmail.com </Link></span><br/><br/><br/>
+
+        </div>
+
+        </center>
+      </div>
     </div>
     </>
      )
