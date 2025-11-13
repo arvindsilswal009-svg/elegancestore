@@ -1,0 +1,12 @@
+.container {
+  background-image: url(/public/backpattern.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  font-style: normal;
+  margin-top: 2px;
+  color: blanchedalmond;
+  text-align: center;
+  width: 100%;
+}
+
