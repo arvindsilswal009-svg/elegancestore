@@ -12,7 +12,7 @@ function Userhome(){
      
       <div className="row items-center">
         <div className="col-md-3 text-center"> <img src="storelogo.png" style={{height:"100px",width:"100px"}}/></div>
-        <div className="col-md-6 text-center"><center>  <h3>Welcome To Elegance Store</h3></center></div>
+        <div className="col-md-6 text-center"><center>  <h3>Welcome To Elegance Store </h3></center></div>
         <div className="col-md-3 text-center">
 <span><Link ><i class="fa-solid fa-phone"></i> +91-1234567890 </Link></span><br/>
 <span><Link ><i class="fa-brands fa-whatsapp"></i> +91-1234567890 </Link></span><br/>
