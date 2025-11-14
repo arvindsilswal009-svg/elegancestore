@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const mysql = require('mysql');
-<<<<<<< HEAD
 const fs = require('fs');
 const multer = require('multer');
 const app = express();
@@ -10,12 +9,6 @@ const path = require('path');
 app.use(express.json());
 app.use('/uploads', express.static('uploads'));
 app.use(cors());
-=======
-
-const app = express();
-app.use(cors());
-app.use(express.json());
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
 
 const db = mysql.createConnection({
     host: 'localhost',
@@ -28,29 +21,19 @@ const db = mysql.createConnection({
 app.get("/", (req, res) => {
     res.send("Server running!");
 });
-<<<<<<< HEAD
-=======
-
-// REGISTER route
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
 app.post("/register", (req, res) => {
     const { name, contact, email, password } = req.body;
 
     const sql = "INSERT INTO userinfo (name, contact, email, password) VALUES (?, ?, ?, ?)";
     db.query(sql, [name, contact, email, password], (err, result) => {
-<<<<<<< HEAD
         if (err) {
             console.log("SQL Error:", err);
             return res.status(500).json({ status: "ERROR", error: err });
         }
-=======
-        if (err) return res.json({ status: "ERROR", error: err });
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
 
         return res.json({ status: "SUCCESS", message: "User Registered Successfully" });
     });
 });
-<<<<<<< HEAD
 //admin login
 const ADMIN = {
   id: "elegancestore",
@@ -71,14 +54,6 @@ app.post("/adminlogin", (req, res) => {
 app.post("/login", (req, res) => {
     const { email, password } = req.body;
 
-=======
-
-app.post("/login", (req, res) => {
-    const { email, password } = req.body;
-
-    console.log("📥 Received Email:", email);
-    console.log("📥 Received Password:", password);
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
 
     const sql = "SELECT * FROM userinfo WHERE email = ? AND password = ?";
     db.query(sql, [email, password], (err, data) => {
@@ -88,11 +63,6 @@ app.post("/login", (req, res) => {
             return res.json({ success: false, error: err });
         }
 
-<<<<<<< HEAD
-=======
-        console.log("📤 DB Result:", data);
-
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
         if (data.length > 0) {
             return res.json({ success: true, user: data[0] });
         } else {
@@ -100,11 +70,7 @@ app.post("/login", (req, res) => {
         }
     });
 });
-<<<<<<< HEAD
 //get data from userinfoo sql 
-=======
-
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
 app.get("/userinfo", (req, res) => {
     const sql = "SELECT * FROM userinfo";
 
@@ -115,7 +81,6 @@ app.get("/userinfo", (req, res) => {
     });
 });
 
-<<<<<<< HEAD
 //this is for filenupload
 const storage = multer.diskStorage({
   destination: (req, file, cb) => {
@@ -171,8 +136,6 @@ app.get("/products", (req, res) => {
   });
 });
 
-=======
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
 app.listen(5000, () => {
     console.log("Server is running on port 5000");
 });
