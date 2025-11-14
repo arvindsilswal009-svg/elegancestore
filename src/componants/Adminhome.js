@@ -2,6 +2,7 @@ import react, { useState } from "react";
 import { Link } from "react-router-dom";
 import Cart from "./Cart";
 import Adminnav from "./Adminnav";
+<<<<<<< HEAD
 import axios from "axios";
 import { useEffect } from "react";
 function Adminhome(){
@@ -22,13 +23,21 @@ function Adminhome(){
 
     fetchResults();
   }, [searchQuery]);
+=======
+function Adminhome(){
+
+>>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
      return (
       <>
       <div className="container-fluid">
       <div> <p style={{backgroundColor:"gray"}}><marquee direction="right">You Will Get The Product with premium quality and high definition printing .                                                                        You can customize the photos as you want it.</marquee>   </p></div>
      
       <div className="row items-center">
+<<<<<<< HEAD
         <div className="col-md-3 text-center"><img src="logo.jpg" style={{height:"80px",width:"90px" , borderRadius:"40%", backgroundColor:"gray" }}/></div>
+=======
+        <div className="col-md-3 text-center"><img src="url('.\public\storelogo.png')" /></div>
+>>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
         <div className="col-md-6 text-center"><center>  <h3>Welcome Rohit Silswal</h3></center></div>
         <div className="col-md-3 text-center">
  </div>
@@ -37,6 +46,7 @@ function Adminhome(){
       <div> 
       <Adminnav/> // Navigation Bar
       </div> 
+<<<<<<< HEAD
       <div>
       <ul>
         {results.map((item) => (
@@ -46,6 +56,8 @@ function Adminhome(){
         ))}
       </ul>
         </div>
+=======
+>>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
       <Cart/> /* Cart Componant */
       <br/>
       <hr/>

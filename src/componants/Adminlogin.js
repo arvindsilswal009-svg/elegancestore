@@ -1,12 +1,17 @@
 import react from "react";
 import { useNavigate } from "react-router-dom";
+<<<<<<< HEAD
 import axios from "axios";
 import { useState } from "react";
+=======
+
+>>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
 function Adminlogin() {
     const navigate=useNavigate();
     const handleback=()=>{
         navigate('/');
     }
+<<<<<<< HEAD
     const [id,setid]=useState();
     const [password,setpassword]=useState();
 const getadminlogin = async (e) => {
@@ -31,6 +36,22 @@ const getadminlogin = async (e) => {
                 <br/><br/>
                 <label>Password </label><br/>
                 <input className="form-control" type="password" name="password" placeholder="Enter Password" onChange={(e)=>(setpassword(e.target.value))} required />
+=======
+    
+
+    return(
+        <div className="container-fluid logincontainer">
+           
+            <form className="loginform">
+                <center><h2> Admin Login</h2></center> <br/>
+                <button onClick={handleback}  style={{backgroundColor:"gray" , borderRadius:"2px",width:"50px", marginLeft:"60%" }}> back</button>
+                <br/>
+                <label>Username </label><br/>
+                <input className="form-control" type="text" name="username" placeholder="Enter id" required />
+                <br/><br/>
+                <label>Password </label><br/>
+                <input className="form-control" type="password" name="password" placeholder="Enter Password" required />
+>>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
                 <br/><br/>
                 <center><button className="loginbtns" type="submit" >Login</button></center>
                 <br/>
