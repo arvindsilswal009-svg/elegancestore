@@ -6,6 +6,17 @@ function Addproduct(){
                 <center><h2>Add New Product</h2></center><br/><br/>
                 <label>Product Name:</label><br/>
                 <input className="form-control" type="text" name="productname" placeholder="Enter Product Name" required /><br/>
+                
+  <label>Product Type:</label><br/><br/>
+  <input type="radio" id="tshirt" name="type" value="T-shirt"/>
+  <label for="tshirt">T-shirt</label>
+&emsp;&emsp;
+  <input type="radio" id="mug" name="type" value="Mug" />
+  <label for="mug">Mug</label>
+&emsp;&emsp;
+  <input type="radio" id="mousepad" name="type" value="Mousepad"/>
+  <label for="mousepad">Mousepad</label><br/><br/>
+
                 <label>Product Description:</label><br/>
                 <textarea className="form-control" name="productdescription" placeholder="Enter Product Description" required></textarea><br/>
                 <label>Price:</label><br/>

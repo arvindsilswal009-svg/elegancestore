@@ -10,7 +10,7 @@ function Home(){
       <div> <p style={{backgroundColor:"gray"}}><marquee direction="right">You Will Get The Product with premium quality and high definition printing .                                                                        You can customize the photos as you want it.</marquee>   </p></div>
      
       <div className="row items-center">
-        <div className="col-md-3 text-center"><img src="url('.\public\storelogo.png')" /></div>
+        <div className="col-md-3 text-center"><img src="logo.jpg" style={{height:"80px",width:"90px" , borderRadius:"40%", backgroundColor:"gray" }}/></div>
         <div className="col-md-6 text-center"><center>  <h3>Welcome To Elegance Store</h3></center></div>
         <div className="col-md-3 text-center">
 <span><Link ><i class="fa-solid fa-phone"></i> +91-1234567890 </Link></span><br/>
