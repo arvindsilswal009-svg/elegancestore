@@ -15,15 +15,11 @@ function Register() {
  const [password,setpassword]=useState();
  const [contact,setcontact]=useState();
 
-<<<<<<< HEAD
+
  const getregister = async (e) => {
   e.preventDefault(); 
-=======
-var handleRegister = async (e) => {
-  e.preventDefault();
 
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
-  var dt = {
+var dt = {
     name: name,
     email: email,
     password: password,
@@ -31,11 +27,9 @@ var handleRegister = async (e) => {
   };
 
   try {
-<<<<<<< HEAD
-    const res = await axios.post("http://localhost:5000/register", dt);
-=======
+    
+
     const res = await axios.post("http://localhost:5000/userinfo", dt);
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
     setMsg("You are registered to Elegance Store, " + name);
   } catch (err) {
     console.log(err);
@@ -45,11 +39,10 @@ var handleRegister = async (e) => {
 
  return(
         <div className="container-fluid registercontainer">
-<<<<<<< HEAD
+
 <form className="registerform" onSubmit={getregister} > 
-=======
-<form className="registerform" onSubmit={handleRegister}> 
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
+ 
+
         <center><h2>Register Here</h2></center> <br/>
         <h4>{msg}</h4>
         <button onClick={handleback}  style={{backgroundColor:"gray" , borderRadius:"2px",width:"50px", marginLeft:"60%" }}> back</button>

@@ -14,10 +14,10 @@
     "multer": "^2.0.2",
     "mysql": "^2.18.1",
     "mysql2": "^3.15.3",
-<<<<<<< HEAD
-=======
+
+
     "nodemon": "^3.1.11",
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
+
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.5",
@@ -26,20 +26,14 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-<<<<<<< HEAD
+
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "start": "react-scripts start",
     "server": "nodemon server.js"
-=======
-   
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-   
-   "start": "node Server.js"
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
+
+
   },
   "eslintConfig": {
     "extends": [
@@ -58,11 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-<<<<<<< HEAD
   },
   "devDependencies": {
     "nodemon": "^3.1.11"
-=======
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
   }
 }

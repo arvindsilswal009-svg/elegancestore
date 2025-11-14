@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
- background-image: url(/public/backpattern.avif);
+  background-image: url(/public/backpattern.avif);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -12,14 +12,16 @@ body {
   text-align: center;
   width: 100%;
 }
+
 .logincontainer {
- 
-  
+
+
   margin-top: 2px;
   color: blanchedalmond;
   text-align: center;
   width: 100%;
 }
+
 .loginform {
   margin: auto;
   padding: 10px;
@@ -29,7 +31,7 @@ body {
   width: 400px;
   height: 500px;
   box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
-  text-align: left; 
+  text-align: left;
   margin-top: 40px;
 }
 
@@ -54,9 +56,10 @@ body {
   width: 400px;
   height: 680px;
   box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
-  text-align: left; 
+  text-align: left;
   margin-top: 40px;
 }
+
 .loginbtns {
   background-color: #4caf50;
   color: white;
@@ -67,15 +70,16 @@ body {
   width: 40%;
   box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
 }
-<<<<<<< HEAD
-.nav-item .nav-link  {
+
+.nav-item .nav-link {
   border: 1px solid #0c0101;
   border-radius: 7px;
   box-shadow: 0 8px 7px 0 rgb(0, 0, 0);
   height: auto;
 }
+
 .nav-item .nav-link:hover {
-height: 40px;
+  height: 40px;
 }
 
 .cardmap {
@@ -87,9 +91,7 @@ height: 40px;
 }
 
 .card {
-background-color: gray;
-  width: 18rem; 
-   box-shadow: 0 8px 7px 0 rgb(0, 0, 0);     
+  background-color: gray;
+  width: 18rem;
+  box-shadow: 0 8px 7px 0 rgb(0, 0, 0);
 }
-=======
->>>>>>> d4f0ffdf14439246b0d352f9b552ad486d391628
