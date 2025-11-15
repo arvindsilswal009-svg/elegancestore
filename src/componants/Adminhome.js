@@ -4,6 +4,7 @@ import Cart from "./Cart";
 import Adminnav from "./Adminnav";
 import axios from "axios";
 import { useEffect } from "react";
+import Admincard from "./Admincard";
 
 function Adminhome(){
  const [searchQuery, setSearchQuery] = useState("");
@@ -51,7 +52,7 @@ function Adminhome(){
         ))}
       </ul>
         </div>
-      <Cart/> /* Cart Componant */
+      <Admincard/> /* Cart Componant */
       <br/>
       <hr/>
         <p>Copyright @2024 Elegance Store. All Rights Reserved</p>

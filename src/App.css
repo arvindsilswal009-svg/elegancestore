@@ -91,7 +91,10 @@ body {
 }
 
 .card {
-  background-color: gray;
+  color: blanchedalmond;
+  border-radius: 10px;
+  background-color: rgb(46, 43, 43);
   width: 18rem;
-  box-shadow: 0 8px 7px 0 rgb(0, 0, 0);
+  box-shadow: 0 10px 8px 0 rgb(0, 0, 0);
+  text-align: left;
 }

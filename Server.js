@@ -59,7 +59,7 @@ app.post("/login", (req, res) => {
     db.query(sql, [email, password], (err, data) => {
 
         if (err) {
-            console.log("❌ DB ERROR:", err);
+            console.log(" DB ERROR:", err);
             return res.json({ success: false, error: err });
         }
 
@@ -98,7 +98,7 @@ const upload = multer({ storage });
 //  route for product addition
 app.post("/addproduct", upload.single("image"), (req, res) => {
   const { pname, description, type, price } = req.body;
- const image = req.file ? `/uploads/${req.file.filename}` : null;
+ const image = req.file ? `uploads/${req.file.filename}` : null;
 
   const sql = "INSERT INTO products (pname, description, type, price, image) VALUES (?, ?, ?, ?, ?)";
   db.query(sql, [pname, description, type, price, image], (err, result) => {
@@ -108,22 +108,6 @@ app.post("/addproduct", upload.single("image"), (req, res) => {
     }
     res.json({ status: "SUCCESS", message: "Product added successfully!" });
   });
-});
-// for search button
-
-app.get('/products/search', (req, res) => {
-    const { q } = req.query; // search query from frontend
-
-    const sql = "SELECT * FROM products WHERE pname LIKE ? OR description LIKE ?";
-    const searchTerm = `%${q}%`; // partial match
-
-    db.query(sql, [searchTerm, searchTerm], (err, results) => {
-        if (err) {
-            console.error("SQL Error:", err);
-            return res.status(500).json({ error: "Database error" });
-        }
-        res.json(results);
-    });
 });
 
 
@@ -135,7 +119,6 @@ app.get("/products", (req, res) => {
     res.json(result);
   });
 });
-
 app.listen(5000, () => {
     console.log("Server is running on port 5000");
 });

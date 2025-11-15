@@ -10,7 +10,7 @@ import Userhome from './componants/Userhome';
 import Adminhome from './componants/Adminhome';
 import Customize from './componants/Customize';
 import Adminlogin from './componants/Adminlogin';
-
+import Editproduct from './componants/Editproduct';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
   <Route path='/adminhome' element={<Adminhome/>}/>
   <Route path='/customize' element={<Customize/>}/>
   <Route path='/adminlogin' element={<Adminlogin/>}/> 
+  <Route path='/editproduct/:id' element={<Editproduct/>}/>
    </Routes>
    </BrowserRouter>
   );
