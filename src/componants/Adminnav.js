@@ -1,24 +1,28 @@
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
-  
+  import { useParams } from "react-router-dom";
 
 function Adminnav() {
-  const [results, setResults] = useState([]);
+  const id=useParams();
+useEffect(()=>{
+  const remove=async()=>{
+    try{
+      await axios.delete(`http://localhost:5000/${id.id}`);
+  console.log(id);
+    }catch(err){
+      console.log(err);
+    }
+  }
+},[]);
+
   const navigate=useNavigate();
     const handlelog=()=>{
         navigate('/login');
     }
-     const handleSearch = async (query) => {
-    try {
-      const res = await axios.get(`http://localhost:5000/products/search?q=${query}`);
-      setResults(res.data);
-    } catch (err) {
-      console.error("Search Error:", err);
-    }
-  };
+     
 
   return (
    <>

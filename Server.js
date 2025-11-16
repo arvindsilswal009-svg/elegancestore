@@ -113,12 +113,58 @@ app.post("/addproduct", upload.single("image"), (req, res) => {
 
 // GET PRODUCTS
 app.get("/products", (req, res) => {
-  const sql = "SELECT image, pname, price, description FROM products";
+  const sql = "SELECT id, image, pname, price, description FROM products";
   db.query(sql, (err, result) => {
     if (err) return res.json({ error: err });
     res.json(result);
   });
 });
+
+app.delete("/products/:id", (req, res) => {
+  const productId = req.params.id;
+  const q = "DELETE FROM products WHERE id = ?";
+
+  db.query(q, [productId], (err, result) => {
+    if (err) return res.status(500).json(err);
+    res.json({ message: "Product deleted successfully" });
+  });
+});
+
+//get product by id
+app.get('/products/:id', (req, res) => {
+  const { id } = req.params;
+
+  const sql = "SELECT * FROM products WHERE id = ?";
+  db.query(sql, [id], (err, result) => {
+    if (err) {
+      return res.status(500).json({ error: err.message });
+    }
+
+    if (result.length === 0) {
+      return res.status(404).json({ message: "Product not found" });
+    }
+
+    res.json(result[0]);
+  });
+});
+app.put('/products/:id', (req, res) => {
+  const { id } = req.params;
+  const { pname, type, price, description, image } = req.body;
+
+  const sql = `UPDATE products SET pname=?, type=?, price=?, description=?, image=? WHERE id=?`;
+
+  db.query(sql, [pname, type, price, description, image, id], (err, result) => {
+    if (err) return res.status(500).json({ error: err });
+
+    if (result.affectedRows === 0) {
+      return res.status(404).json({ message: "Product not found" });
+    }
+
+    res.json({ message: "Product updated successfully" });
+  });
+});
+
+
 app.listen(5000, () => {
     console.log("Server is running on port 5000");
 });

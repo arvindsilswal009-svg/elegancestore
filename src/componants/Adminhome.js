@@ -34,7 +34,7 @@ function Adminhome(){
       <div className="row items-center">
 
         <div className="col-md-3 text-center"><img src="logo.jpg" style={{height:"80px",width:"90px" , borderRadius:"40%", backgroundColor:"gray" }}/></div>
-        <div className="col-md-6 text-center"><center>  <h3>Welcome Rohit Silswal</h3></center></div>
+        <div className="col-md-6 text-center"><center>  <h3>Welcome Admin Name</h3></center></div>
         <div className="col-md-3 text-center">
  </div>
       </div>

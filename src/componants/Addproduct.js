@@ -38,13 +38,13 @@ const getproductadd=async(e)=>{
                 <input className="form-control" type="text" name="productname" placeholder="Enter Product Name" onChange={(e)=>setpname(e.target.value)} required /><br/>
                 
   <label>Product Type:</label><br/><br/>
-  <input type="radio" id="tshirt" name="type"  value="physical" onChange={(e)=>settype(e.target.value)} />
+  <input type="radio" id="tshirt" name="type"  value="tshirt" onChange={(e)=>settype(e.target.value)} />
   <label for="tshirt">T-shirt</label>
 &emsp;&emsp;
-  <input type="radio" id="mug" name="type" value="digital"  onChange={(e)=>settype(e.target.value)} />
+  <input type="radio" id="mug" name="type" value="mug"  onChange={(e)=>settype(e.target.value)} />
   <label for="mug">Mug</label>
 &emsp;&emsp;
-  <input type="radio" id="mousepad" name="type" value="service"  onChange={(e)=>settype(e.target.value)}/>
+  <input type="radio" id="mousepad" name="type" value="mousepad"  onChange={(e)=>settype(e.target.value)}/>
   <label for="mousepad">Mousepad</label><br/><br/>
 
                 <label>Product Description:</label><br/>
